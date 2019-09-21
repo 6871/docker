@@ -1,5 +1,8 @@
 # Docker Image Library
 
+Images built from here can be found at:
+[https://hub.docker.com/u/6871](https://hub.docker.com/u/6871)
+
 ## [images/ansible](images/ansible/image_files/Dockerfile)
 
 Adds Ansible to the specified base image.
