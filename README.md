@@ -1,6 +1,7 @@
 # Docker Image Build Library
 
-The following modules can be used to generate Docker image hierarchies:
+The following modules can be used to generate Docker images (or hierarchies
+thereof):
  
 - [ansible](images/ansible)
 - [helm](images/helm)
