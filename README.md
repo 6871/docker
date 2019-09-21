@@ -62,26 +62,3 @@ python_version | Version of Python to install | 3.7.4
 
 :exclamation: Packages are removed at the end of the build to reduce image
 size and could impact existing programs in some parent images.
-
-# Pre-built Images
-
-The following pre-built images are available at
-[hub.docker.com/r/6871](https://hub.docker.com/r/6871):
-
-## [6871/ansible](https://hub.docker.com/r/6871/ansible/tags)
-
-Version | Built From | Adds
---- | --- | ---
-```1.0.0``` ```latest``` | ```6871/python:1.0.0``` | ```ansible 2.8.5```
-
-## [6871/ansible-k8s](https://hub.docker.com/r/6871/ansible-k8s/tags)
-
-Version | Built From | Adds
---- | --- | ---
-```1.0.0``` ```latest``` | ```6871/ansible:1.0.0``` | ```helm v2.14.3``` ```kubectl v1.16.0```
-
-## [6871/python](https://hub.docker.com/r/6871/python/tags)
-
-Version | Built From | Adds
---- | --- | ---
-```1.0.0``` ```latest``` | ```docker.io/library/ubuntu:18.04``` | ```Python 3.7.4```
