@@ -12,7 +12,7 @@ Build arguments:
 
 --build-arg | Description | Example Value
 --- | --- | ---
-from_image | Docker image for Dockerfile's FROM clause | 6871/python:3.7.4
+from_image | Docker image for Dockerfile's FROM clause | 6871/python:1.0.0
 ansible_version | Version of Ansible to install | 2.8.5
 
 ### [images/helm](images/helm/image_files/Dockerfile)
