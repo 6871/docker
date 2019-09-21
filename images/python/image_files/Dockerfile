@@ -13,9 +13,9 @@ ARG python_tmp_dir=/python_tmp
 
 RUN apt-get update \
   && apt-get upgrade --yes \
-  && apt-get install --yes curl gcc make libffi-dev libssl-dev unzip \
-    xz-utils zlib1g-dev \
-  && mkdir python_tmp \
+  && apt-get install --yes --no-install-recommends ca-certificates curl gcc \
+    make libffi-dev libssl-dev unzip xz-utils zlib1g-dev \
+  && mkdir "${python_tmp_dir}" \
   && curl -Ls "${python_url}" | tar -C "${python_tmp_dir}" -xJ \
   && cd "${python_tmp_dir}/Python-${python_version}" \
   && ./configure \
@@ -24,8 +24,8 @@ RUN apt-get update \
   && pip3 install --upgrade pip \
   && cd / \
   && rm -rf "${python_tmp_dir}" \
-  && apt-get purge --yes curl xz-utils gcc make libssl-dev libffi-dev \
-    zlib1g-dev \
+  && apt-get purge --yes ca-certificates curl gcc \
+    make libffi-dev libssl-dev unzip xz-utils zlib1g-dev \
   && apt-get autoclean \
   && apt-get autoremove --yes \
   && find /usr/local/lib/python* -maxdepth 2 -type d -name test \

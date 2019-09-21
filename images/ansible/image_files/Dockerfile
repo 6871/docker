@@ -9,11 +9,11 @@ ARG ansible_version
 
 RUN apt-get update \
   && apt-get upgrade --yes \
-  && apt-get install --yes openssh-client sshpass curl vim less \
+  && apt-get install --yes --no-install-recommends \
+    openssh-client sshpass curl \
   && pip3 install --upgrade pip \
   && pip3 --no-cache-dir install --compile ansible==${ansible_version} \
+  && apt-get purge --yes curl \
   && apt-get autoclean \
   && apt-get autoremove --yes \
-  && find /usr/local/lib/python* -maxdepth 2 -type d -name test \
-    | while read -r i; do rm -rfv "$i"; done \
   && rm -rf /var/lib/apt/lists/*
