@@ -12,13 +12,14 @@ ARG helm_tmp_dir="${HOME}/helm_tmp"
 
 RUN apt-get update \
   && apt-get upgrade --yes \
-  && apt-get install --yes curl \
+  && apt-get install --yes --no-install-recommends ca-certificates curl \
   && curl -LO "${helm_url}" \
   && mkdir "${helm_tmp_dir}" \
   && tar -C "${helm_tmp_dir}" -zxvf "${helm_archive}" \
   && rm "${helm_archive}" \
   && mv "${helm_tmp_dir}/linux-amd64/helm" /usr/local/bin/helm \
   && rm -rf "${helm_tmp_dir}" \
+  && apt-get purge --yes ca-certificates curl \
   && apt-get autoclean \
   && apt-get autoremove --yes \
   && rm -rf /var/lib/apt/lists/*

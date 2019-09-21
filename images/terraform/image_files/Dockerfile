@@ -12,12 +12,13 @@ ARG tf_url=https://releases.hashicorp.com/terraform/${tf_version}/${tf_zip}
 #  && apt-get install --yes openssh-client sshpass curl vim \
 RUN apt-get update \
   && apt-get upgrade --yes \
-  && apt-get install --yes curl unzip \
+  && apt-get install --yes --no-install-recommends \
+    ca-certificates curl unzip \
   && curl -LO "${tf_url}" \
   && unzip "${tf_zip}" \
   && rm -fv "${tf_zip}" \
   && mv terraform /bin/ \
-  && apt-get purge --yes curl unzip \
+  && apt-get purge --yes ca-certificates curl unzip \
   && apt-get autoclean \
   && apt-get autoremove --yes \
   && rm -rf /var/lib/apt/lists/*
