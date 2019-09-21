@@ -9,5 +9,5 @@ thereof):
 - [python](images/python)
 - [terraform](images/terraform)
 
-Images pre-built using these modules can be found here:
+Pre-built images from these modules can be found here:
 [https://hub.docker.com/u/6871](https://hub.docker.com/u/6871)
