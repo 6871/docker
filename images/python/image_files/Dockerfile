@@ -24,7 +24,7 @@ RUN apt-get update \
   && pip3 install --upgrade pip \
   && cd / \
   && rm -rf "${python_tmp_dir}" \
-  && apt-get purge --yes ca-certificates curl gcc \
+  && apt-get purge --yes curl gcc \
     make libffi-dev libssl-dev unzip xz-utils zlib1g-dev \
   && apt-get autoclean \
   && apt-get autoremove --yes \

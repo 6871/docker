@@ -18,7 +18,7 @@ RUN apt-get update \
   && unzip "${tf_zip}" \
   && rm -fv "${tf_zip}" \
   && mv terraform /bin/ \
-  && apt-get purge --yes ca-certificates curl unzip \
+  && apt-get purge --yes curl unzip \
   && apt-get autoclean \
   && apt-get autoremove --yes \
   && rm -rf /var/lib/apt/lists/*

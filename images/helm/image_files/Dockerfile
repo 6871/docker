@@ -19,7 +19,7 @@ RUN apt-get update \
   && rm "${helm_archive}" \
   && mv "${helm_tmp_dir}/linux-amd64/helm" /usr/local/bin/helm \
   && rm -rf "${helm_tmp_dir}" \
-  && apt-get purge --yes ca-certificates curl \
+  && apt-get purge --yes curl \
   && apt-get autoclean \
   && apt-get autoremove --yes \
   && rm -rf /var/lib/apt/lists/*

@@ -16,7 +16,7 @@ RUN apt-get update \
   && curl -LO "${k8s_prefix}/${k8s_version}${k8s_kubectl_suffix}" \
   && chmod +x ./kubectl \
   && mv ./kubectl /usr/local/bin/kubectl \
-  && apt-get purge --yes ca-certificates curl \
+  && apt-get purge --yes curl \
   && apt-get autoclean \
   && apt-get autoremove --yes \
   && rm -rf /var/lib/apt/lists/*
