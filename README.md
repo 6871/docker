@@ -2,8 +2,7 @@
 
 ## Ansible Playbooks
 
-- [ansible](ansible)
-  - [ubuntu_docker_install](ansible/ubuntu_docker_install) 
+- [ubuntu_docker_install](ansible/ubuntu_docker_install) 
 
 ## Docker Image Build Modules
 
