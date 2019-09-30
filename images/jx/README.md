@@ -10,7 +10,7 @@ Build arguments:
 from_image | Docker image for Dockerfile's FROM clause | 6871/k8s:1.0.1
 jx_version | Version of Jenkins X to install | v2.0.802
 
-:exclamation: Note "v" prefix in Helm version number.
+:exclamation: Note "v" prefix in jx_version number.
 
 ---
 
