@@ -1,2 +1,0 @@
-# atp upgrade module to use (i.e. dist|full|no|safe|yes)
-apt_upgrade: "no"

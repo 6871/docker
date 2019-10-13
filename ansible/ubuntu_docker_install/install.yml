@@ -1,6 +1,0 @@
-- hosts: all
-  roles:
-    - check_is_ubuntu
-    - remove_legacy
-    - install
-    - post_install
