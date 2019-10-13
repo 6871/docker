@@ -1,9 +1,5 @@
 # Docker Resources
 
-## Ansible Playbooks
-
-- [ubuntu_docker_install](ansible/ubuntu_docker_install) 
-
 ## Docker Image Build Modules
 
 - [images](images) 
