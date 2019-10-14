@@ -4,6 +4,9 @@
 
 - [images](images) 
   - [ansible](images/ansible)
+  - [concourse-fly](images/concourse-fly)
+  - [drone](images/drone)
+  - [go](images/go)
   - [helm](images/helm)
   - [jx](images/jx)
   - [kubectl](images/kubectl)
