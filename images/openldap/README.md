@@ -12,6 +12,7 @@ from_image | Docker image for Dockerfile's FROM clause | ubuntu:19.10
 - https://www.openldap.org/
 - https://help.ubuntu.com/lts/serverguide/openldap-server.html
   - https://help.ubuntu.com/community/OpenLDAPServer
+- https://www.splunk.com/blog/2009/07/30/ldapsearch-is-your-friend.html
 - [LDAP System Administration](https://learning.oreilly.com/library/view/ldap-system-administration/1565924916/)
 
 ---
