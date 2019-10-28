@@ -9,6 +9,6 @@ while true; do
     'Server: nc' \
     '<!doctype html>' \
     '<html><body><p>Hello, World!</p>' \
-    '<p>@ '"$(date)"'</p></body></html>' \
+    '<p>'"${HOSTNAME}"' @ '"$(date)"'</p></body></html>' \
   | nc -l -p "${NC_HTTP_PORT:-8080}" -N
 done
