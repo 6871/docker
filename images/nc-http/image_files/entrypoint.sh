@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-printf '%s\n' 'Running nc, NC_HTTP_PORT="%s"...' "${NC_HTTP_PORT}"
+printf 'Running nc, NC_HTTP_PORT="%s"; default is 8080...\n' "${NC_HTTP_PORT}"
 
 while true; do
   printf '%s\n%s\n%s\n\n%s\n%s\n%s' \
