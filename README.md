@@ -11,6 +11,7 @@
   - [helm](images/helm)
   - [jx](images/jx)
   - [kubectl](images/kubectl)
+  - [nc-http](images/nc-http)
   - [openldap](images/openldap)
   - [python](images/python)
   - [terraform](images/terraform)
