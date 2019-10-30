@@ -15,6 +15,7 @@
   - [openldap](images/openldap)
   - [python](images/python)
   - [terraform](images/terraform)
+  - [vault](images/vault)
 
 ### Pre-built images
 
